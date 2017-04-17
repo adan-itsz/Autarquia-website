@@ -44,6 +44,58 @@ Autarquía ofrece a sus lectores la oportunidad de expresar sus ideas y pensamie
 .wsite-not-footer blockquote {}
 .wsite-footer blockquote {}
 .blog-header h2 a {}
+/*css de popup*/
+
+.modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #282828; /* Fallback color */
+
+    background-color: rgba(40,40,40,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+    background-color: #fefefe;
+    margin: 5% 30%; /* 15% from the top and centered */
+    padding: 1.3%;
+		opacity: .95;
+    border: 1px solid #888;
+    width: 32%; /* Could be more or less, depending on screen size */
+		z-index: 2;
+		text-align: center;
+
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#flayer{
+width: 90%;
+
+
+
+}
+
+
 #wsite-content h2.wsite-product-title {}
 .wsite-product .wsite-product-price a {}
 .wsite-footer h2 a:hover, .wsite-footer .paragraph a:hover, .wsite-footer blockquote a:hover {color:#fff !important;}
@@ -140,6 +192,15 @@ var STYLE_PREFIX = 'wsite';
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+	<span class="close">&times;</span>
+	<img id ="flayer" src="imagenes/flayer.jpg">
+</div>
+
+</div>
 		<div class="birdseye-header">
 			<div class="nav-wrap">
 				<div class="container">
@@ -244,14 +305,12 @@ var STYLE_PREFIX = 'wsite';
 
 <h3 ALIGN=center>Número actual</h3>
 
-
-
 <div class="delimitador">
 	<div class="contenedor">
-		<iframe name="joomag-embed-b3cbef8f-ee11-4397-a7c4-eec09ca3969b"
+		<iframe name="joomag-embed-788a5901-507e-444a-a5ee-47dcadc4aaa0"
 	 hspace="0" vspace="0" frameborder="0"
-		src="https://www.joomag.com/magazine/autarquía-segundo-número-capitalismo/0212193001485983186?e=1&amp;page=1&amp;embedInfo=;"></iframe>
-	 		<div class="joomag-backlinks"><a href="https://www.joomag.com/magazine/autarquía-segundo-número-capitalismo/0212193001485983186" target="_blank">Open publication</a>
+		src="https://www.joomag.com/magazine/autarquía-tercer-número-democracia/0882299001490480972?e=1&amp;page=1&amp;embedInfo=;"></iframe>
+	 		<div class="joomag-backlinks"><a href="www.joomag.com/magazine/autarquía-tercer-número-democracia/0882299001490480972" target="_blank">Open publication</a>
 		 	</div>
 	</div>
 	</div>
@@ -329,6 +388,8 @@ var STYLE_PREFIX = 'wsite';
 		</ul>
 	</div>
 
+
+	<script typr="text/javascript" src="modal.js"></script>
 	<script type="text/javascript" src="files/theme/plugins.js"></script>
 	<script type="text/javascript" src="files/theme/custom.js"></script>
 
@@ -358,6 +419,7 @@ var STYLE_PREFIX = 'wsite';
 			</ul>
 		</li>
 </ul>
+
 
 
 	</body>
