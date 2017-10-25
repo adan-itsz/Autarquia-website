@@ -152,6 +152,20 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 var STATIC_BASE = '//cdn1.editmysite.com/';
 var ASSETS_BASE = '//cdn2.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
+
+@media screen and (max-device-width: "500px" ) {
+
+}
+
+
+.container{
+  position:relative;
+
+}
+video#video-nav{
+    display: inline-block;
+		width:100%;
+}
 //-->
 </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
@@ -192,15 +206,7 @@ var STYLE_PREFIX = 'wsite';
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
-<div id="myModal" class="modal">
 
-<!-- Modal content -->
-<div class="modal-content">
-	<span class="close">&times;</span>
-	<img id ="flayer" src="imagenes/flayer.jpg">
-</div>
-
-</div>
 		<div class="birdseye-header">
 			<div class="nav-wrap">
 				<div class="container">
@@ -273,14 +279,15 @@ var STYLE_PREFIX = 'wsite';
 
 			<div class="wsite-elements wsite-not-footer wsite-header-elements">
 	<div class="wsite-section-wrap">
-	<div   >
+	<div  >
 		<div class="wsite-section-content>
 
 					<div class="container">
 
-
-							<img src="imagenes/camion.jpg" alt="autarquía"
-							width="100%" height="90%">
+						<video id='video-nav' loop preload autoplay width="100%" poster="imagenes/portada.png">
+						    <source src="imagenes/autarquia.mp4" type="video/mp4" width="10px" >
+						 Tu navegador no soporta HTML5 Video
+						</video>
 
 
 
@@ -307,10 +314,10 @@ var STYLE_PREFIX = 'wsite';
 
 <div class="delimitador">
 	<div class="contenedor">
-		<iframe name="joomag-embed-788a5901-507e-444a-a5ee-47dcadc4aaa0"
+		<iframe name="joomag-embed-0b462ab8-5318-43dc-9cb3-7ddf2a2a7c61"
 	 hspace="0" vspace="0" frameborder="0"
-		src="https://www.joomag.com/magazine/autarquía-tercer-número-democracia/0882299001490480972?e=1&amp;page=1&amp;embedInfo=;"></iframe>
-	 		<div class="joomag-backlinks"><a href="www.joomag.com/magazine/autarquía-tercer-número-democracia/0882299001490480972" target="_blank">Open publication</a>
+		src="https://view.joomag.com/autarquía-cuarto-número/0616953001496157511?e=1&amp;page=1&amp;embedInfo=;"></iframe>
+	 		<div class="joomag-backlinks"><a href="www.view.joomag.com/autarquía-cuarto-número/0616953001496157511" target="_blank">Open publication</a>
 		 	</div>
 	</div>
 	</div>
